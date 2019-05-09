@@ -1,0 +1,36 @@
+<!--pages/signIn/signIn.wxml-->
+<view class='container'>
+  <view class='image-wall'>
+    <view catchtap='getSignLn' class="{{ isSign ? 'button2' : 'button1' }}">{{ isSign ? '今天已签到' : '签到' }}</view>
+    <view class='day-list'>
+      <block wx:for='{{ dayList }}' wx:for-item="item1">
+        <view class='day-item'>
+          <view class="{{ item1.signStatus ? 'circle2' : 'circle1' }}">
+            <view class='circle-inner'>
+              <text class='money'>{{ item1.money }}</text>
+              <!-- <image src='/images/money.png'/> -->
+              <text class="iconfont icon-money"></text>
+            </view>
+          </view>
+          <text class='day'>{{ item1.day }}天</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="record">
+    <view class="record-head">
+      <view class="record-title">签到记录</view>
+    </view>
+    <view class="record-body">
+      <block wx:for='{{ signRecord }}' wx:for-item='item2' wx:key='{{ item2.date }}'>
+        <view class="record">
+          <view class="circle"></view>
+          <view class="time">{{ item2.date }}</view>
+          <view class="status">{{ item2.status }}</view>
+          <view class="money iconfont icon-money">+ {{ item2.reward_gold }}</view>
+        </view>
+      </block>
+    </view>
+    <view class="lastinfo">—— 到 底 啦 ——</view>
+  </view>
+</view>

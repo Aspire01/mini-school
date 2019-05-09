@@ -1,0 +1,28 @@
+<!--pages/hotspot-detail/hotspot-detail.wxml-->
+<import src='../../lib/wxParse/wxParse.wxml' />
+<view class='container'>
+  <view class='header'>
+    <view class='title'>{{ caption }}</view>
+    <view class='time'>{{ time }}</view>
+  </view>
+  <view class='body'>
+    <template is='wxParse' data='{{ wxParseData:article.nodes }}' />
+  </view>
+  <view class='h88rpx'></view>
+  <view class='footer'>
+    <input placeholder='写评论' bindfocus='goToCommentWin'/>
+    <view class='function'>
+      <view class="{{ favourStatus ? 'praise praiseToggle' : 'praise' }}" catchtap='togglePraise'>
+        <text class='iconfont icon-dianzan font'></text>
+        <text class='sub'>{{ favour }}</text>
+      </view>
+      <view class='comment' catchtap='goToComment'>
+        <text class='iconfont icon-pinglun font'></text>
+        <text class='sub'>{{ comment }}</text>
+      </view>
+      <button class='share' open-type='share'>
+        <text class='iconfont icon-fenxiang font'></text>
+      </button>
+    </view>
+  </view>
+</view>

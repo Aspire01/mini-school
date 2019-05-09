@@ -1,0 +1,179 @@
+/* pages/mine-personal/mine-personal.wxss */
+page{
+  background: #ddd;
+}
+.container{
+  width:100%;
+}
+.personal-card{
+  width:100%;
+  background: #ddd;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.personal-card>image{
+  width:120rpx;
+  height:120rpx;
+  border-radius:50%;
+  margin:50rpx 0 30rpx;
+}
+.personal-card>.nickName{
+  font-size: 32rpx;
+  font-weight: 599;
+  margin-bottom:30rpx;
+  color:#fff;
+}
+.personal-card>.localtion{
+  font-size: 24rpx;
+  margin-bottom:30rpx;
+  color: rgb(240, 179, 65);
+}
+.personal-card>.personal-info{
+  width:100%;
+  display:flex;
+  padding-bottom:30rpx;
+  flex-direction:row;
+  justify-content: space-evenly;
+  color:#fff;
+  font-size: 28rpx;
+}
+.personal-card>.personal-info>.personal-id{
+  margin-left:100rpx;
+}
+.personal-card>.personal-info>.personal-register{
+  margin-right:100rpx;
+}
+.box{
+  background: #ddd;
+}
+.box>.nav{
+  width:100%;
+  height:80rpx;
+  background: #fff;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+.box>.nav>.tab{
+  box-sizing:border-box;
+  width:320rpx;
+  height:100%;
+  font-size:16px;
+  text-align:center;
+  line-height:76rpx;
+}
+.active{
+  border-bottom:2px solid #f38b71;
+}
+.box>.my-comment{
+  
+}
+.box>.my-message{
+  background: #ddd;
+}
+.message-list{
+  width:100%;
+}
+.message-list>.message{
+  width:730rpx;
+  display:flex;
+  flex-direction:column;
+  border-radius: 5px;
+  margin:20rpx auto;
+  background: #fff;
+  box-shadow: 0 0 10rpx #ccc;
+}
+.message-list>.message>.header{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding:20rpx 20rpx 0;
+}
+.message>.header>image{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+}
+.message>.header>.desc{
+  width:85%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.message>.header>.desc>.info{
+  display:flex;
+  flex-direction:column;
+}
+.message>.header>.desc>.info>.name{
+  font-size:30rpx;
+  font-weight:599;
+}
+.message>.header>.desc>.info>.localtion{
+  margin-top:8rpx;
+  font-size:24rpx;
+  color:#666;
+}
+.message>.header>.desc>.time{
+  font-size:24rpx;
+  color:#666;
+}
+.message-list>.message>.body{
+  padding:20rpx;
+}
+.message-list>.message>.body>.content{
+  font-size:28rpx;
+  letter-spacing: 2rpx;
+  margin-bottom:20rpx;
+}
+.message-list>.message>.body>image{
+  width:100%;
+  display: block;
+}
+.message>.body>.function{
+  font-size:28rpx;
+  margin-top:20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.message>.body>.function>view{
+  width:50%;
+  padding:20rpx;
+  border:1rpx solid #ddd;
+  font-size:20rpx;
+  text-align:center;
+  box-shadow: 0 0 10rpx #ddd inset;
+  background: #eee;
+}
+.message>.body>.function>view:active{
+  box-shadow: 0 0 15rpx #bbb inset;
+  background: #ddd;
+}
+.iconfont{
+  color:#666;
+  font-size: 28rpx;
+  margin-right:10rpx;
+}
+.message>.body>.function>.favour{
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
+}
+.message>.body>.function .is-click{
+  color:red;
+}
+.message>.body>.function>.dis-favour{
+  border-top-right-radius:8px;
+  border-bottom-right-radius:8px;
+}
+.lastinfo,.emptyInfo{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #999;
+  text-align: center;
+  font-size:30rpx;
+}
+.emptyInfo{
+  background: #fff;
+}

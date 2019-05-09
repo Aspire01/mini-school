@@ -1,0 +1,154 @@
+/* pages/signIn/signIn.wxss */
+.image-wall{
+  width:100%;
+  height:450rpx;
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539102003806&di=45abdc972d6daf2f53633bb934b5e1d1&imgtype=0&src=http%3A%2F%2Fwww.cnjidan.com%2Fupload%2Fpictures%2F2016%2F08%2F0-6HMC2y.jpg);
+  background-size: cover;
+  overflow: hidden;
+  position:relative;
+}
+.image-wall>.button1{
+  width:200rpx;
+  margin:100rpx auto;
+  padding:15rpx 40rpx;
+  text-align:center;
+  color:#fff;
+  font-size:32rpx;
+  border-radius:20px;
+  background-image: linear-gradient(rgba(252, 87, 87, 0.8), #c02d2d);
+}
+.image-wall>.button2{
+  width:200rpx;
+  margin:100rpx auto;
+  padding:15rpx 40rpx;
+  text-align:center;
+  color:#fff;
+  font-size:32rpx;
+  border-radius:20px;
+  background: #989898;
+}
+.image-wall>.day-list{
+  position: absolute;
+  bottom: 0;
+  height: 180rpx;
+  width: 100%;
+  background: rgba(247, 201, 131, 0.8);
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+.image-wall>.day-list>.day-item{
+  margin-top:25rpx;
+}
+.day-list>.day-item>.circle2{
+  position:relative;
+  width:70rpx;
+  height:70rpx;
+  margin-bottom:10rpx;
+  background:#989898;
+  border:6rpx solid #989898;
+  border-radius:50%;
+}
+.day-list>.day-item>.circle1{
+  position:relative;
+  width:70rpx;
+  height:70rpx;
+  margin-bottom:10rpx;
+  background:#b75b06;
+  border:6rpx solid #b75b06;
+  border-radius:50%;
+}
+.day-item .circle-inner{
+  position:absolute;
+  box-sizing:border-box;
+  width:70rpx;
+  height:70rpx;
+  border:4rpx solid #fff;
+  border-radius:50%;
+  font-size:26rpx;
+  color:#fff;
+  padding-top:13rpx;
+  text-align: center;
+}
+.day-list>.day-item>.day{
+  margin-left:18rpx;
+  margin-top:20rpx;
+  color:#b75b06;
+  font-size:28rpx;
+}
+.day-list>.day-item .iconfont{
+  font-size: 26rpx;
+  color: orange;
+}
+
+.record .record-head {
+  font-size: 16px;
+  color: #FF9900;
+  line-height: 47px;
+  height: 47px;
+}
+.record .record-head .record-title {
+  margin-left: 30rpx;
+}
+
+.record .record-body{
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+.record .record-body .record{
+  position: relative;
+  height: 84rpx;
+  text-align: center;
+  line-height: 84rpx;
+  font-size: 30rpx;
+  color: #414141;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:0 30rpx 0 100rpx;
+}
+.record .record-body .record .circle {
+  position: absolute;
+  width: 32rpx;
+  height: 32rpx;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 50%;
+  top: 26rpx;
+  left: 30rpx;
+  z-index: 2;
+}
+.record .record-body .record .time {
+  width: 136rpx;
+  color: #696969;
+  float: left;
+}
+.record .record-body .record .money {
+  color: #FF9900;
+}
+.record .icon-money:after {
+  content: "\e618"; 
+  margin-left:10rpx;
+}
+.record .record-body .record::before {
+  content: '';
+  position: absolute;
+  width: .05rpx;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  left: 47.5rpx;
+}
+.record .iconfont {
+  font-size:28rpx;
+  line-height:84rpx;
+  margin-left: 15rpx;
+}
+.lastinfo {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #999;
+  text-align: center;
+  font-size:30rpx;
+}

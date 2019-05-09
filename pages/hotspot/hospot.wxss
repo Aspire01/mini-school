@@ -1,0 +1,65 @@
+/* pages/hotspot/hospot.wxss */
+.banner-box{
+  width:100%;
+  height:360rpx;
+}
+.banner{
+  width:100%;
+}
+.artic-list{
+  margin:10rpx 20rpx 0;
+}
+.artic-list>.artic{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  padding:20rpx 0;
+  border-bottom:0.5rpx solid #f6f6f6;
+}
+.artic-list>.artic>image{
+  width:335rpx;
+  height:170rpx;
+  border:0.5rpx solid #ddd;
+  border-radius:3px;
+}
+.artic>.description{
+  width:100%;
+  padding-left:20rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.artic>.description>.caption{
+  font-size:27rpx;
+  font-weight: 599;
+  letter-spacing: 1rpx;
+  margin-top:-2rpx;
+  word-break: break-all;
+  color:#333;
+}
+.artic>.description>.function{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  color:#888;
+  font-size:24rpx;
+}
+.artic>.description>.function .last{
+  margin-left:20rpx;
+  margin-right:10rpx;
+}
+.description>.function>view{
+  display: flex;
+  flex-direction: row;
+}
+.function>view>view>text{
+  margin-left:10rpx;
+}
+.lastinfo{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #999;
+  text-align: center;
+  font-size:30rpx;
+}

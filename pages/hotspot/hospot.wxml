@@ -1,0 +1,27 @@
+<!--pages/hotspot/hospot.wxml-->
+<view class='container'>
+  <swiper class='banner-box'>
+    <swiper-item>
+      <image class='banner' src='/images/banner.jpg' mode='widthFix'/>
+    </swiper-item>
+  </swiper>
+  <view class='artic-list'>
+    <block wx:for='{{ articList }}'>
+      <view class='artic' data-artic-id='{{ item.id }}' data-artic-favour='{{ item.favour }}' catchtap='getArticDetail'>
+        <image src='{{ item.thumb }}' mode='aspectFill'/>
+        <view class='description'>
+          <text class='caption'>{{ item.title }}</text>
+          <view class='function'>
+            <text>{{ item.add_time }}</text>
+              <view>
+                <view>{{ item.favour }}<text class='iconfont icon-dianzan'></text></view>
+                <view class='last'>{{ item.commentsCount }}<text class='iconfont icon-pinglun'></text></view>
+              </view>
+          </view>
+        </view>
+      </view>
+    </block> 
+  </view>
+
+  <view wx:if='{{ isEmpty }}' class="lastinfo">—— 到 底 啦 ——</view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#ccc",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "热点",
+  "enablePullDownRefresh": true
+}

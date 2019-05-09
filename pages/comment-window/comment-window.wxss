@@ -1,0 +1,56 @@
+/* pages/comment-template/comment-template.wxss */
+page{
+  background: #f8f8f8;
+}
+.backHotspotDetail{
+  padding:20rpx 30rpx;
+  border-bottom:1rpx solid #efefef;
+  background: #fff;
+}
+.backHotspotDetail>.info{
+  font-size:30rpx;
+  color:#333;
+  background: #f4f5f7;
+  padding:10rpx 15rpx;
+}
+.commentWin{
+  box-sizing: border-box;
+  width:750rpx;
+  background: #f8f8f8;
+  padding:30rpx 30rpx 200rpx;
+}
+.commentWin>.form{
+  width:100%;
+  display: flex;
+  flex-direction:column;
+}
+.commentWin .comment-bar{
+  box-sizing: border-box;
+  width:100%;
+  background: #fff;
+  border-radius: 5px;
+  padding:20rpx;
+  font-size:28rpx;
+}
+.commentWin .fun-bar{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.commentWin .fun-bar>text{
+  margin-top:30rpx;
+  font-size: 28rpx;
+  font-weight: 599;
+}
+.commentWin .fun-bar>.submit{
+  margin:0;
+  padding:0;
+  margin-top:36rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  font-weight: 599;
+  color:#dd0c1c;
+}
+.commentWin .fun-bar>.submit::after{
+  border:0;
+}

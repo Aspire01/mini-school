@@ -1,0 +1,45 @@
+<!--pages/hotspot-detail-comment/hotspot-detail-comment.wxml-->
+<view class='container' id='container'>
+  <view class='backHotspotDetail'>
+    <view class='info' catchtap='backHotspotDetail'>查看原文：[{{ articTitle }}]</view>
+  </view>
+  <view class='caption'>全部评论</view>
+  <view wx:if='{{ isEmpty }}' class='empty-info'>
+    评论区空荡荡的，快来抢沙发~
+  </view>
+  <view wx:else class='commentList'>
+    <block wx:for='{{ commentList }}'>
+      <view class='commentCard'>
+        <view class='box'>
+          <view class='header'>
+            <image src='{{ item.userinfo.headimgurl }}' mode='widthFix'></image>
+            <view class='desc'>
+              <view class='info'>
+                <text class='nickname'>{{ item.userinfo.nickname }}</text>
+                <view>
+                  <text class='localtion'>{{ item.userinfo.country }}</text>
+                  <text class='time'>{{ item.time }}</text>
+                </view>
+              </view>
+              <view class='floor'>{{ item.floor }}#</view>
+            </view>
+          </view>
+          <view class='content'>{{ item.content }}</view>
+          <view class='fun-bar'>
+            <text class='comment'>回复</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view wx:if='{{ isFinish }}' class="lastinfo">—— 到 底 啦 ——</view>
+  <view class='h88rpx'></view>
+  <view class='footer'>
+    <input placeholder='写评论' bindfocus='goToCommentWin' />
+    <view class='function'>
+      <text class='iconfont font' catchtap='getHotspotComment'>刷新</text>
+      <text class='iconfont font' catchtap='goToTop'>顶部</text>
+      <text class='iconfont font' catchtap='goToBottom'>底部</text>
+    </view>
+  </view>
+</view>

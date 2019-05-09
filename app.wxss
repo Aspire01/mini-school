@@ -1,0 +1,35 @@
+/**app.wxss**/
+@import "/lib/wxParse/wxParse.wxss";
+@import "/font/font.wxss";
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:24rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-money:after { content: "\e618"; }
+
+.icon-dianzan:before { content: "\e60c"; }
+
+.icon-pinglun:before { content: "\e619"; }
+
+.icon-liuyan:before { content: "\e654"; }
+
+.icon-guanyu:before { content: "\e61e"; }
+
+.icon-haoyou:before { content: "\e627"; }
+
+.icon-fenxiang:before { content: "\e683"; }
+
+.icon-shezhi:before { content: "\e657"; }
+
+.icon-gengduo:before { content: "\e600"; }
+
+.icon-tupian:before { content: "\e7e1"; }
+
+.icon-cai:before { content: "\e607"; }
+
+.icon-zhuxiao:before { content: "\e8d8"; }

@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/welconme/welcome",
+    "pages/hotspot/hospot",
+    "pages/hotspot-detail/hotspot-detail",
+    "pages/hotspot-detail-comment/hotspot-detail-comment",
+    "pages/comment-window/comment-window",
+    "pages/signIn/signIn",
+    "pages/share/share",
+    "pages/message/message",
+    "pages/mine/mine",
+    "pages/mine-personal/mine-personal"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#ddd",
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTitleText": "校友录",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bbb",
+    "selectedColor": "#FFA500",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/hotspot/hospot",
+        "text": "热点",
+        "iconPath": "/images/tabbar/hotspot.png",
+        "selectedIconPath": "/images/tabbar/hotspot-selected.png"
+      },
+      {
+        "pagePath": "pages/signIn/signIn",
+        "text": "签到",
+        "iconPath": "/images/tabbar/signIn.png",
+        "selectedIconPath": "/images/tabbar/signIn-selected.png"
+      },
+      {
+        "pagePath": "pages/share/share",
+        "text": "邀请",
+        "iconPath": "/images/tabbar/invitation.png",
+        "selectedIconPath": "/images/tabbar/invitation-selected.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "留言",
+        "iconPath": "/images/tabbar/love.png",
+        "selectedIconPath": "/images/tabbar/love-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/tabbar/mine.png",
+        "selectedIconPath": "/images/tabbar/mine-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

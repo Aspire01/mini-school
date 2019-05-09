@@ -1,0 +1,173 @@
+/* pages/share/share.wxss */
+page,.container{
+  width:100%;
+  height:100%;
+  background: #eeeded;
+}
+.container>swiper{
+  height:400rpx;
+}
+.container>swiper .banner{
+  width:100%;
+}
+.container>.box{
+  
+}
+.container>.box>.function{
+  box-sizing:border-box;
+  width:100%;
+  height:80rpx;
+  background: #fff;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+.box>.function>.tab{
+  box-sizing:border-box;
+  width:320rpx;
+  height:100%;
+  font-size:16px;
+  text-align:center;
+  line-height:76rpx;
+}
+.active{
+  border-bottom:2px solid #f38b71;
+}
+.container>.box>.show-before{
+  width:700rpx;
+  margin:50rpx auto;
+  border-radius:5px;
+  background: #fff;
+  box-shadow: 0 0 30rpx #888;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+
+}
+.box>.show-before>.invite-caption{
+  width:100%;
+  text-align:center;
+  line-height:100rpx;
+  font-size:16px;
+}
+.box>.show-before>.invite-body{
+  width:100%;
+  margin:30rpx 0;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+.invite-body>.box>.circle{
+  width:150rpx;
+  height:150rpx;
+  border-radius: 50%;
+  border:1rpx solid #0ccd1a;
+  position: relative;
+}
+.invite-body>.box>.circle>.share{
+  position:absolute;
+  top:0;
+  left:0;
+  width:150rpx;
+  height:150rpx;
+  border-radius: 50%;
+  opacity: 0;
+}
+.invite-body>.box>.circle>.share:after{
+  border:0;
+}
+.invite-body>.box>.circle>image{
+  position: absolute;
+  top:50%;
+  left:50%;
+  width:120rpx;
+  height:120rpx;
+  margin-top:-60rpx;
+  margin-left:-60rpx;
+}
+.box>.img-desc{
+  margin-top:20rpx;
+  text-align:center;
+  font-size:14px;
+}
+.show-before>.button{
+  display: block;
+  margin:15rpx auto 30rpx;
+  width:150rpx;
+  padding:20rpx 70rpx;
+  background: #ffb61b;
+  border-radius:38rpx;
+  text-align:center;
+  font-size:15px;
+  color:#fff;
+}
+.container>.box>.show-after{
+  width:700rpx;
+  margin:50rpx auto;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.info{
+  font-size:14px;
+  text-align:center;
+}
+
+modal image{
+  display: block;
+  width:560rpx;
+  margin:0 auto;
+}
+modal view{
+  margin:20rpx 0;
+}
+.friendList{
+  width:100%;
+  border-radius: 8px;
+}
+.friendList>.friendCard{
+  width:100%;
+  border-bottom:1rpx solid #efefef;
+  background: #fff;
+  box-shadow: 0 0 20rpx #ddd;
+}
+.friendList>.friendCard> .header{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:30rpx 20rpx;
+}
+.friendList>.friendCard> .header>image{
+  box-sizing: border-box;
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+}
+.friendList>.friendCard> .header>.desc{
+  width: 85%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between
+}
+.friendCard> .header>.desc>.info{
+  display:flex;
+  flex-direction:column;
+}
+.header>.desc>.info>.nickname{
+  font-size:30rpx;
+  font-weight:599;
+  color:#333;
+  text-align: left;
+  margin-left:15rpx;
+}
+.header>.desc>.info .localtion{
+  font-size:24rpx;
+  color:#666;
+  margin-left:15rpx
+}
+.header>.desc>.info .time{
+  font-size:24rpx;
+  color:#666;
+  margin-left:15rpx;
+}

@@ -1,0 +1,49 @@
+<!--pages/mine/mine.wxml-->
+<view class='container'>
+  <view class='user-bar' bindtap='goToPersonalCenter'>
+    <image src="{{ isLogin ? avatarUrl : '/images/tabbar/mine.png' }}" />
+    <view wx:if='{{ isLogin }}' class='user-login'>
+      <text class='login-remind'>{{ nickName }}</text>
+      <view class='sign-bar' catchtap='goToSignIn'>
+        <view>
+          <text class='is-sign'>{{ isSign ? '已签' : '未签' }}</text>
+          <view class='money'>+{{ money }}<text class='iconfont icon-money'></text></view>
+        </view>
+        <text class='iconfont icon-gengduo'></text>
+      </view>
+    </view>
+    <text wx:else class='login-info' catchtap='loginFun'>点击登录</text>
+  </view>
+  <view class='fun-list'>
+    <view class='fun-bar-money'>
+      <block wx:for='{{ functionListOne }}'>
+        <view class='fun-bar' data-index='{{ item.id }}' catchtap='tapSet'>
+          <text class="iconfont {{ item.iconFont }}"></text>
+          <text class='fun-desc'>{{ item.desc }}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='fun-list'>
+    <view class='fun-bar-message'>
+      <block wx:for='{{ functionListTwo }}'>
+        <view class='fun-bar' data-index='{{ item.id }}' catchtap='tapSet'>
+          <text class="iconfont {{ item.iconFont }}"></text>
+          <text class='fun-desc'>{{ item.desc }}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='fun-list'>
+    <view class='fun-bar-function'>
+      <button class='share' open-type="{{ isLogin ? 'share' : '' }}" catchtap='tapSet'></button>
+      <block wx:for='{{ functionListThree }}'>
+        <view class='fun-bar' data-index='{{ item.id }}' catchtap='tapSet'>
+          <text class="iconfont {{ item.iconFont }}"></text>
+          <text class='fun-desc'>{{ item.desc }}</text>
+          <text wx:if='{{ item.id == 6 }}' class='version'>v{{ version }}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

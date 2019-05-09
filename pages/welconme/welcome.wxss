@@ -1,0 +1,36 @@
+/**welcome.wxss**/
+page{
+  background: #ccc;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
+.usermotto {
+  margin: 400rpx 0;
+  border:4rpx solid #fff;
+  border-radius: 5px;
+  padding:15rpx 25rpx;
+  color:#fff;
+}

@@ -1,0 +1,63 @@
+<!--pages/share/share.wxml-->
+<view class='container'>
+  <swiper>
+    <swiper-item>
+      <image class='banner' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539172296957&di=698b46de4b546874dd4cf9158abf3737&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fcb8065380cd79123f2785b59a6345982b2b78007.jpg'
+        mode='widthFix' />
+    </swiper-item>
+  </swiper>
+  <view class='box'>
+    <view class='function'>
+      <view class="{{ tabOne ? 'tab active' : 'tab'}}" catchtap='getTabOne' data-id='{{ 0 }}'>邀请好友</view>
+      <view class="{{ tabTwo ? 'tab active' : 'tab'}}" catchtap='getTabTwo' data-id='{{ 1 }}'>我的邀请</view>
+    </view>
+    <view wx:if='{{ tabOne }}' class='show-before'>
+      <view class='invite-caption'>邀请方式</view>
+      <view class='invite-body'>
+        <view class='box'>
+          <view class='circle'>
+            <image src='{{ wechatImg }}' mode='widthFix' />
+            <button open-type="{{ isLogin ? 'share' : '' }}" class='share' catchtap='isLogin'></button>
+          </view>
+          <view class='img-desc'>微信</view>
+        </view>
+        <view class='box'>
+          <view class='circle' catchtap='showImgModal'>
+            <image src='{{ posterImg }}' mode='widthFix' />
+          </view>
+          <view class='img-desc'>邀请海报</view>
+        </view>
+      </view>
+      <modal title="全屏后长按保存二维码" hidden="{{ modalHiddenOne }}" bindconfirm="modalOneConfirm" bindcancel="modalOneCandel">
+        <image src="{{contentImg}}" data-src="{{contentImg}}" bindtap="previewImage" mode='widthFix'></image>
+      </modal>
+      <text class='button' catchtap='description'>邀请说明</text>
+      <modal title="邀请方式" hidden="{{ modalHiddenTwo }}" bindconfirm="modalTwoConfirm" bindcancel="modalTwoCandel">
+        <view>方式一:点击微信图标发送到好友/群即可</view>
+        <view>方式二:点击邀请海报,在弹出的窗口中点击图片,进入全屏模式后长按即可保存海报,随后可自行推广</view>
+      </modal>
+    </view>
+
+    <view wx:if='{{ tabTwo }}' class='show-after'>
+      <view wx:if='{{ false }}' class='info'>您还没有邀请好友哦,赶快去邀请吧!</view>
+      <view wx:if='{{ true }}' class='friendList'>
+        <block wx:for='{{ friendList }}'>
+          <view class='friendCard'>
+            <view class='header'>
+              <image src='{{ item.headimgurl }}' mode='widthFix'></image>
+              <view class='desc'>
+                <view class='info'>
+                  <text class='nickname'>{{ item.nickname }}</text>
+                  <view>
+                    <text class='localtion'>{{ item.userinfo.address }}江北</text>
+                    <text class='time'>注册时间：{{ item.time }}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

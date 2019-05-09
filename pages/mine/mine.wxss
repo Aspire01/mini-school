@@ -1,0 +1,140 @@
+/* pages/mine/mine.wxss */
+page{
+  background: #f2f3f7;
+}
+.container{
+  width:100%;
+  background: #f2f3f7;
+  display:flex;
+  flex-direction:column;
+}
+.container>.user-bar{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+  padding:30rpx 0 50rpx 0;
+  padding-left:30rpx;
+  border-bottom:0.05rpx solid #ddd;
+}
+.container>.user-bar>image{
+  width:120rpx;
+  height:120rpx;
+  border-radius:50%;
+  background: #e8eaf1;
+}
+.container>.user-bar .user-login{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:80%; 
+}
+.container>.user-bar .login-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:80%; 
+  vertical-align: middle;
+  line-height:120rpx;
+  font-weight:599;
+  font-size:30rpx;
+  letter-spacing: 3rpx;
+}
+.container>.user-bar .login-remind{
+  vertical-align: middle;
+  line-height:120rpx;
+  font-weight:599;
+  font-size:30rpx;
+  letter-spacing: 3rpx;
+}
+.container>.user-bar .sign-bar{
+  width:120rpx;
+  height:70rpx;
+  float:right;
+  background: #f0f1f5;
+  margin-top:25rpx;
+  border-top-left-radius:18px;
+  border-bottom-left-radius:18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container>.user-bar .sign-bar>view{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left:20rpx;
+  padding:8rpx 0;
+}
+.container>.user-bar .sign-bar .is-sign{
+  font-size:18rpx;
+  margin-left:12rpx;
+  letter-spacing: 3rpx;
+}
+.container>.user-bar .sign-bar .money{
+  font-size:18rpx;
+  color:orange;
+  margin-left:8rpx;
+}
+.sign-bar>view>.money>.iconfont{
+  font-size:20rpx;
+  margin-left:6rpx;
+}
+.container>.user-bar .sign-bar .icon-gengduo{
+  font-size:20rpx;
+  margin-top:25rpx;
+  margin-right:10rpx;
+  font-weight: 599;
+}
+.container>.fun-list{
+  box-sizing: border-box;
+  display:flex;
+  flex-direction:column;
+  background: #fff;
+  margin-top:20rpx;
+  border-bottom: .05rpx solid #ddd;
+}
+.container>.fun-list>.fun-bar-function{
+  position:relative;
+}
+.container>.fun-list>.fun-bar-function>.share{
+  width:690rpx;
+  margin-left:30rpx;
+  height:78rpx;
+  position:absolute;
+  top:0;
+  opacity: 0;
+}
+.container>.fun-list>.fun-bar-function>.share::after{
+  border:0;
+}
+.container .fun-bar{
+  display:flex;
+  flex-direction:row;
+  margin:0 30rpx;
+  padding:30rpx 0;
+  background: #fff;
+  border-bottom:0.05rpx solid #f6f6f6;
+}
+.container .fun-bar>.iconfont{
+  font-size:36rpx;
+  color:#666;
+  margin-top:-3rpx;
+}
+.container .fun-bar>image{
+  width:40rpx;
+  height:40rpx;
+  vertical-align: middle;
+}
+.container .fun-bar>.fun-desc{
+  vertical-align: middle;
+  font-size:24rpx;
+  font-weight:599;
+  letter-spacing: 1rpx;
+  margin-left:30rpx;
+}
+.version{
+  font-size:24rpx;
+  margin-left:510rpx;
+  color:#888;
+}

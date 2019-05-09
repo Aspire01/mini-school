@@ -1,0 +1,93 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wxc9c6e5e46c7523e5",
+	"projectname": "school",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": 0,
+					"name": "热点",
+					"pathName": "pages/hotspot/hospot",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "签到",
+					"pathName": "pages/signIn/signIn",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "邀请",
+					"pathName": "pages/share/share",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "热点-详情页",
+					"pathName": "pages/hotspot-detail/hotspot-detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "留言",
+					"pathName": "pages/message/message",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心-详情",
+					"pathName": "pages/mine-personal/mine-personal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "热点-详情-评论",
+					"pathName": "pages/hotspot-detail-comment/hotspot-detail-comment"
+				}
+			]
+		}
+	}
+}

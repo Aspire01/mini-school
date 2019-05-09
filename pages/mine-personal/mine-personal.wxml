@@ -1,0 +1,51 @@
+<!--pages/mine-personal/mine-personal.wxml-->
+<view class='container'>
+  <view class='personal-card'>
+    <image src='{{ avatarUrl }}' />
+    <text class='nickName'>{{ nickName }}</text>
+    <text class='localtion'>{{ country }}</text>
+    <view class='personal-info'>
+      <text class='personal-id'>ID:{{ uid }}</text>
+      <text class='personal-register'>注册时间:{{ resigterTime }}</text>
+    </view>
+  </view>
+  <view class='box'>
+    <view class='nav'>
+      <!-- <view class="{{ switchOne ? 'tab active' : 'tab'}}" catchtap='getTabOne' data-id='{{ 0 }}'>我的评论</view> -->
+      <view class="{{ switchTwo ? 'tab active' : 'tab'}}" catchtap='getTabTwo' data-id='{{ 1 }}'>我的留言</view>
+    </view>
+    <view wx:if='{{ switchOne }}' class='my-commment'>
+      00000000
+    </view>
+    <view wx:if='{{ switchTwo }}' class='my-message'>
+      <view class='message-list'>
+        <block wx:for='{{ messageList }}'>
+          <view class='message'>
+            <view class='header'>
+              <image src='{{ item.headimgurl }}' />
+              <view class='desc'>
+                <view class='info'>
+                  <text class='name'>{{ item.nickname }}</text>
+                  <text class='localtion'>{{ item.last_ip.country }}</text>
+                </view>
+                <text class='time'>{{ item.time }}</text>
+              </view>
+            </view>
+            <view class='body'>
+              <view class='content'>{{ item.content }}</view>
+              <image wx:if='{{ item.picurl }}' src='{{ item.picurl }}' mode='widthFix' />
+              <view class='function'>
+                <view class="{{ item.if_favour ? 'favour is-click' : 'favour' }}" data-comment-id='{{ item.commentId }}' data-id='{{ item.id }}' catchtap='favour'>
+                  <text class="{{ item.if_favour ? 'iconfont icon-dianzan is-click' : 'iconfont icon-dianzan' }}"></text>{{ item.favour }}</view>
+                <view class="{{ item.if_disfavour ? 'dis-favour is-click' : 'dis-favour' }}" data-comment-id='{{ item.commentId }}' data-id='{{ item.id }}' catchtap='disFavour'>
+                  <text class="{{ item.if_disfavour ? 'iconfont icon-cai is-click' : 'iconfont icon-cai' }}"></text>{{ item.disfavour }}</view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view wx:if='{{ isEmpty }}' class="lastinfo">—— 到 底 啦 ——</view>
+      <view wx:if='{{ emptyInfoSwitch }}' class="emptyInfo">—— 您还没有留言,快去发一条吧~ ——</view>
+    </view>
+  </view>
+</view>

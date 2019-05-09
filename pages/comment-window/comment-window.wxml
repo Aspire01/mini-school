@@ -1,0 +1,13 @@
+<!--pages/comment-template/comment-template.wxml-->
+<view class='backHotspotDetail'>
+  <view class='info' catchtap='backHotspotDetail'>查看原文：[{{ articTitle }}]</view>
+</view>
+<view class='commentWin'>
+  <form class='form' bindsubmit='submitForm'>
+    <textarea class='comment-bar' name='textarea' placeholder='说两句~' fixed='true' cursor-spacing='120' />
+    <view class='fun-bar'>
+      <text class='nickname'>{{ nickName }}</text>
+      <button class='submit' form-type='submit'>发表</button>
+    </view>
+  </form>
+</view>
