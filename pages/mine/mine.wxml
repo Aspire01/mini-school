@@ -18,7 +18,7 @@
     <view class='fun-bar-money'>
       <block wx:for='{{ functionListOne }}'>
         <view class='fun-bar' data-index='{{ item.id }}' catchtap='tapSet'>
-          <text class="iconfont {{ item.iconFont }}"></text>
+          <text class="iconfont {{ item.iconFont }}" style='color:#94B5FF;'></text>
           <text class='fun-desc'>{{ item.desc }}</text>
         </view>
       </block>
@@ -28,7 +28,7 @@
     <view class='fun-bar-message'>
       <block wx:for='{{ functionListTwo }}'>
         <view class='fun-bar' data-index='{{ item.id }}' catchtap='tapSet'>
-          <text class="iconfont {{ item.iconFont }}"></text>
+          <text class="iconfont {{ item.iconFont }}" style='color:#94B5FF;'></text>
           <text class='fun-desc'>{{ item.desc }}</text>
         </view>
       </block>
@@ -39,7 +39,7 @@
       <button class='share' open-type="{{ isLogin ? 'share' : '' }}" catchtap='tapSet'></button>
       <block wx:for='{{ functionListThree }}'>
         <view class='fun-bar' data-index='{{ item.id }}' catchtap='tapSet'>
-          <text class="iconfont {{ item.iconFont }}"></text>
+          <text class="iconfont {{ item.iconFont }}" style='color:#94B5FF;'></text>
           <text class='fun-desc'>{{ item.desc }}</text>
           <text wx:if='{{ item.id == 6 }}' class='version'>v{{ version }}</text>
         </view>

@@ -1,11 +1,14 @@
 <!--pages/share/share.wxml-->
 <view class='container'>
-  <swiper>
+  <!-- <swiper>
     <swiper-item>
       <image class='banner' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539172296957&di=698b46de4b546874dd4cf9158abf3737&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fcb8065380cd79123f2785b59a6345982b2b78007.jpg'
         mode='widthFix' />
     </swiper-item>
-  </swiper>
+  </swiper> -->
+  <view class='page-head'>
+    
+  </view>
   <view class='box'>
     <view class='function'>
       <view class="{{ tabOne ? 'tab active' : 'tab'}}" catchtap='getTabOne' data-id='{{ 0 }}'>邀请好友</view>

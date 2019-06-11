@@ -13,46 +13,46 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "backgroundColor": "#ddd",
-    "navigationBarBackgroundColor": "#ccc",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#5455FF",
     "navigationBarTitleText": "校友录",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "#bbb",
-    "selectedColor": "#FFA500",
+    "color": "#B7B7B7",
+    "selectedColor": "#7D7EFF",
     "borderStyle": "white",
     "backgroundColor": "white",
     "list": [
       {
         "pagePath": "pages/hotspot/hospot",
         "text": "热点",
-        "iconPath": "/images/tabbar/hotspot.png",
-        "selectedIconPath": "/images/tabbar/hotspot-selected.png"
+        "iconPath": "/images/tabbar-new/1.png",
+        "selectedIconPath": "/images/tabbar-new/1-1.png"
       },
       {
         "pagePath": "pages/signIn/signIn",
         "text": "签到",
-        "iconPath": "/images/tabbar/signIn.png",
-        "selectedIconPath": "/images/tabbar/signIn-selected.png"
+        "iconPath": "/images/tabbar-new/2.png",
+        "selectedIconPath": "/images/tabbar-new/2-1.png"
       },
       {
         "pagePath": "pages/share/share",
         "text": "邀请",
-        "iconPath": "/images/tabbar/invitation.png",
-        "selectedIconPath": "/images/tabbar/invitation-selected.png"
+        "iconPath": "/images/tabbar-new/3.png",
+        "selectedIconPath": "/images/tabbar-new/3-1.png"
       },
       {
         "pagePath": "pages/message/message",
         "text": "留言",
-        "iconPath": "/images/tabbar/love.png",
-        "selectedIconPath": "/images/tabbar/love-selected.png"
+        "iconPath": "/images/tabbar-new/4.png",
+        "selectedIconPath": "/images/tabbar-new/4-1.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "/images/tabbar/mine.png",
-        "selectedIconPath": "/images/tabbar/mine-selected.png"
+        "iconPath": "/images/tabbar-new/5.png",
+        "selectedIconPath": "/images/tabbar-new/5-1.png"
       }
     ]
   },

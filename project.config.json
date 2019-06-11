@@ -38,7 +38,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 13,
 			"list": [
 				{
 					"id": 0,
@@ -85,7 +85,49 @@
 				{
 					"id": -1,
 					"name": "热点-详情-评论",
-					"pathName": "pages/hotspot-detail-comment/hotspot-detail-comment"
+					"pathName": "pages/hotspot-detail-comment/hotspot-detail-comment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/welconme/welcome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "留言",
+					"pathName": "pages/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "邀请好友",
+					"pathName": "pages/share/share",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "签到",
+					"pathName": "pages/signIn/signIn",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "热点",
+					"pathName": "pages/hotspot/hospot",
+					"scene": null
 				}
 			]
 		}

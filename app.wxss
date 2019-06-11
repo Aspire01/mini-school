@@ -33,3 +33,12 @@
 .icon-cai:before { content: "\e607"; }
 
 .icon-zhuxiao:before { content: "\e8d8"; }
+
+page {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.flex {
+  display: flex;
+}

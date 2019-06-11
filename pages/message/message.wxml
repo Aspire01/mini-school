@@ -39,7 +39,7 @@
       <textarea class='inputBar' placeholder='请输入正文' maxlength='-1' name='textarea'/>
       <view class='fun-bar'>
         <text class='iconfont icon-tupian' catchtap='chooseImage'></text>
-        <button size='mini' type='warn' form-type='submit'>发布</button>
+        <button size='mini' type='warn' form-type='submit' style='background-image:-webkit-gradient(linear,79% 0%, 0% 100%, from(#585AFF), to(#96b7ff));border-radius:10rpx;letter-spacing:2px;'>发布</button>
       </view>
     </form>
   </view>

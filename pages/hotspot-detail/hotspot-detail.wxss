@@ -1,89 +1,107 @@
 /* pages/hotspot-detail/hotspot-detail.wxss */
-.container{
-  width:100%;
+
+.container {
+  width: 100%;
 }
-.container>.header{
-  width:100%;
-  text-align: center; 
+
+.container>.header {
+  width: 100%;
+  text-align: center;
 }
-.container>.header>.title{
-  margin:80rpx auto 30rpx;
-  padding:0 70rpx;
-  font-weight:bold;
-  text-align:cetner;
-  font-size:34rpx;
+
+.container>.header>.title {
+  margin: 80rpx auto 30rpx;
+  padding: 0 70rpx;
+  font-weight: bold;
+  text-align: cetner;
+  font-size: 34rpx;
 }
-.container>.header>.time{
-  margin-bottom:50rpx;
-  text-align:cetner;
-  font-size:26rpx;
-  color:#999;
+
+.container>.header>.time {
+  margin-bottom: 50rpx;
+  text-align: cetner;
+  font-size: 26rpx;
+  color: #999;
 }
-.container>.body{
-  padding:0 30rpx 0 30rpx;
-  font-size:30rpx;
+
+.container>.body {
+  padding: 0 30rpx 0 30rpx;
+  font-size: 30rpx;
   letter-spacing: 3rpx;
-  line-height:50rpx;
+  line-height: 50rpx;
 }
-.container>.body>.wxParse-p{
-  margin:25rpx 0;
+
+.container>.body>.wxParse-p {
+  margin: 25rpx 0;
 }
-.container>.footer{
-  position:fixed;
-  bottom:0;
-  width:100%;
-  padding:15rpx 0;
+
+.container>.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15rpx 0;
   background: #f8f9fb;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.container>.footer input{
-  width:55%;
-  height:60rpx;
-  margin-left:40rpx;
+
+.container>.footer input {
+  width: 55%;
+  height: 60rpx;
+  margin-left: 40rpx;
   background: #ebf0f4;
   border-radius: 14px;
-  text-indent:25rpx;
+  text-indent: 25rpx;
   font-size: 14px;
 }
-.footer>.function{
+
+.footer>.function {
   display: flex;
   flex-direction: row;
-  margin-right:20rpx;
+  margin-right: 20rpx;
 }
-.footer>.function>view{
-  height:60rpx;
-  margin-left:50rpx;
-  font-size:28rpx;
+
+.footer>.function>view {
+  height: 60rpx;
+  margin-left: 50rpx;
+  font-size: 28rpx;
   line-height: 60rpx;
 }
-.footer>.function>view>.font{
-  font-size:32rpx;
+
+.footer>.function>view>.font {
+  font-size: 32rpx;
 }
-.footer>.function>.comment>.font{
-  position:relative;
-  top:3rpx;
+
+.footer>.function>.comment>.font {
+  position: relative;
+  top: 3rpx;
 }
-.footer>.function>view>.sub{
+
+.footer>.function>view>.sub {
   font-size: 10px;
-  margin-left:8rpx;
+  margin-left: 8rpx;
 }
-.footer>.function>.share{
-  margin-left:32rpx;
-  margin-top:2rpx;
-  font-size:14px;
+
+.footer>.function>.share {
+  margin-left: 32rpx;
+  margin-top: 2rpx;
+  font-size: 14px;
   line-height: 59rpx;
 }
-.footer>.function>.share>.font{
-  font-size:32rpx;
+
+.footer>.function>.share>.font {
+  font-size: 32rpx;
 }
-.footer>.function>.share::after{ 
-  border: none; 
+
+.footer>.function>.share::after {
+  border: none;
 }
-.h88rpx{
-  height:88rpx;
+
+.h88rpx {
+  height: 88rpx;
 }
-.praiseToggle{
-  color:red;
+
+.praiseToggle {
+  color: #AAACFF;
 }

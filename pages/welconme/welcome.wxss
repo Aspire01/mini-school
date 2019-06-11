@@ -1,6 +1,6 @@
 /**welcome.wxss**/
 page{
-  background: #ccc;
+  background: #fff;
 }
 .container {
   height: 100%;
@@ -24,13 +24,14 @@ page{
 }
 
 .userinfo-nickname {
-  color: #fff;
+  color: #FFAA25;
 }
 
 .usermotto {
   margin: 400rpx 0;
-  border:4rpx solid #fff;
+  border:4rpx solid #90C6FD;
   border-radius: 5px;
   padding:15rpx 25rpx;
-  color:#fff;
+  color:#FFAA25;
+  font-size: 32rpx;
 }
